@@ -1,0 +1,164 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Webpipes - A guide by Matthew Hudson</title>
+	
+	<meta name="description" content="An introductory guide and resource for Webpipes." /> 
+	<meta name="author" content="Webpipes.org" />
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<meta property="fb:admins" content="25102034" />
+	<meta property="og:site_name" content="Webpipes.org" />
+
+	<meta property="og:description" content="An introductory guide and resource for Webpipes. " />
+	<meta property="og:locale" content="en_US" />	
+	<meta property="og:image" content="" />
+	<meta property="og:title" content="Learn how to take advantage of Webpipes." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.webpipes.org/" /> 
+
+	<meta name="google-site-verification" content="AclrAJJpdhhlotcvRy14yk0pFRkPGDTKaFxB9CExsJY" />
+	
+	<link rel="canonical" href="http://www.webpipes.org/" /> 
+	
+	<link rel="author" href="https://plus.google.com/103902048207396109122/posts"/>
+	
+	<link rel="shortcut icon" href=""> 
+	
+	<link rel="stylesheet" href="http://www.matthewghudson.com/assets/css/projects.css">
+	
+	<style>
+		#body {
+			margin: 30px 0px;
+		}
+		.navbar .brand {
+			font-size: 26px;
+		}
+		h2 {
+			font-size:24px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				
+				<ul id="header-menu" class="nav">
+	              <li class="active">
+	                <p class="brand">
+						<a href="http://www.webpipes.org/" target="_blank">Webpipes.org </a>
+					</p>
+	              </li>
+	            </ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div id="body" class="row"> 
+			<div class="span16">
+			<hr class="soften">
+				<h2>What are Webpipes?</h2>
+				<p>Essentially, you can think of webpipes as UNIX programs. They are small utilities available over HTTP that do one thing, and do it well. Webpipes follow the Unix philosophy:</p>
+				<ol>
+					<li>Write programs that do one thing and do it well.</li>
+					<li>Write programs to work together.</li>
+					<li>Write programs to handle text streams, because that is a universal interface.</li>
+				</ol>
+					
+					<p>The magic comes when you start chaining pipes together. You can create really amazing workflows by combining a few small pieces together.  </p>
+				
+				
+				<hr class="soften">
+				<h2>How do they work?</h2>
+				<p>Since a Webpipe is essentially just a script that receives input via HTTP POST/GET, there's not much else to know than that.</p> 
+				
+				
+				<hr class="soften">
+				<h2>Where can I find a full list webpipes?</h2>
+				<p>You can view available webpipes on the <a href="http://github.com/webpipes/">Webpipes.org GitHub</a>.</p>
+				
+				
+				<hr class="soften">
+				<a name="spec"></a>
+				<h2>Is there a Webpipe specification?</h2>
+				<p>To participate in the wider Webpipe ecosystem, a few conventions have been adopted which enables webpipes to "speak" to one another. Check out the <a href="http://github.com/webpipes/spec">Webpipe Spec</a>.</p>
+
+				
+				<hr class="soften">
+				<h2>What's the difference between Webhooks and Webpipes?</h2>
+				<p>Although, webhooks share much in common with webpipes, each solve different problems. Webhooks were designed to solve the push/poll issues. Essentially, a Webhook is a URL that responds to events. For example, Github implements webhooks. On post-receive, Github calls a user-defined URL like a callback. If also feeds along a few arguments that tells you about that commit.</p>
+				<p>Likewise, Webpipes are essentially simple scripts publicly ascessible via a URL. A webpipe is stateless. You POST/GET some input, and it'll provide you some output.</p>
+				
+				<hr class="soften">
+				<h2>Why should I care?</h2>
+				<p>Although not yet widely implemented, Webpipes offer developers more leverage. By connecting small and independent units, the whole becomes greater than the sum of its parts.</p>
+				
+				<p>But the real beauty is the potential for Webpipes to enable a new bred of programs. Some folks have even experimented with wrapping Unix programs around HTTP.</p>
+				
+				<hr class="soften">
+				<h2>How do I implement Webpipes?</h2>
+				<p>Since Webpipes are basically just scriptlets, they're easy to implement. Read the <a href="http://www.github.com/webpipes/spec">Webpipes Spec</a> to learn the specifics.</p>
+				
+
+<!--				<hr class="soften">
+				<a name="examples"></a>
+				<h2>Example Webpipes</h2>
+				<ul>
+					<li><a href="http://www.matthewghudson.com/projects/webpipes/css-minify/">CSS Minify</a> - Takes a CSS document and compresses it.</li>
+					<li><a href="http://www.matthewghudson.com/projects/webpipes/markdown-to-html/">Markdown to HTML</a> - Takes a Markdown document and converts it to HTML.</li>
+					<li><a href="http://www.matthewghudson.com/projects/webpipes/proxy/">Proxy</a> - Make HTTP requests via a proxy.</li>
+					<li><a href="http://www.matthewghudson.com/projects/webpipes/twilio-sms/">Twilio SMS</a> - Send a SMS message (requires Twilio account).</li>
+				</ul>
+-->
+				<hr class="soften">
+				<h2>Resources</h2>
+				<ul>
+					<li>Code: <a href="http://www.matthewghudson.com/projects/webpipe.js/">Webpipe.js</a> - Javascript library for Webpipes. Use with Node.js or in the browser.</li>
+					<li>Code: <a href="http://www.matthewghudson.com/projects/webpipe.php/">Webpipe.php</a> - PHP library for Webpipes.</li>
+					<li>Spec: <a href="http://www.github.com/webpipes/spec">Webpipe Specificatoin</a> - A definitive compilation of standards and best practices.</li>
+					<li>Group: <a href="https://groups.google.com/forum/#!forum/webpipes">Webpipe Group</a> -A Google Group for community discussion.</li>
+					<li>Testing: <a href="http://www.postbin.org/">PostBin</a> - Debug webhooks/pipes by capturing and logging requests.</li>
+					<li>Testing: <a href="http://www.webhookapp.com/">WebHookApp</a> - Debug your HTTP requests. Auto-generates a cURL command.</li>
+				</ul>
+				
+				<hr class="soften">
+				<h2>People</h2>
+				<ul>
+					<li><a href="http://www.progrium.com/">Jeff Lindsay</a> - Evangelist behind <a href="http://www.webhooks.org/">Webhooks.org</a></li>
+					<li><a href="http://blog.matthewghudson.com/">Matthew Hudson</a> - Maintains  <a href="http://www.matthewghudson.com/projects/webpipe.js/">Webpipe.js</a>, <a href="http://www.matthewghudson.com/projects/webpipe.php/">Webpipe.php</a></li>
+					<li><a href="http://tlrobinson.net/">Tom Robinson</a> - Evangelist, Hacker Extraordinaire</li>
+				</ul>
+				
+			</div>
+		</div> 
+		
+	</div> <!--! end of .container -->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: ["Lato"]
+			}
+		});
+	
+		// Load Google Analytics.
+		//var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
+		//(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		//g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		//s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+
+</body>
+</html>
