@@ -8,20 +8,20 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Webpipes.org</title>
+	<title>WebPipes.org</title>
 	
-	<meta name="description" content="An introductory guide and resource for Webpipes." /> 
-	<meta name="author" content="Webpipes.org" />
+	<meta name="description" content="WebPipes is a work-in-progress proposal for linking together web services." /> 
+	<meta name="author" content="WebPipes.org" />
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	
 	<meta property="fb:admins" content="25102034" />
-	<meta property="og:site_name" content="Webpipes.org" />
+	<meta property="og:site_name" content="WebPipes.org" />
 
-	<meta property="og:description" content="An introductory guide and resource for Webpipes. " />
+	<meta property="og:description" content="WebPipes is a work-in-progress proposal for linking together web services." />
 	<meta property="og:locale" content="en_US" />	
 	<meta property="og:image" content="/assets/images/webpipes-200.png" />
-	<meta property="og:title" content="Learn how to take advantage of Webpipes." />
+	<meta property="og:title" content="WebPipes.org" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.webpipes.org/" /> 
 
@@ -60,7 +60,7 @@
 				<ul id="header-menu" class="nav">
 	              <li class="active">
 	                <p class="brand">
-						<a href="http://www.webpipes.org/" target="_blank">Webpipes.org </a>
+						<a href="http://www.webpipes.org/" target="_blank">WebPipes.org </a>
 					</p>
 	              </li>
 	            </ul>
@@ -72,8 +72,8 @@
 		<div id="body" class="row"> 
 			<div class="span16">
 			<hr class="soften">
-				<h2>What are Webpipes?</h2>
-				<p>Essentially, you can think of webpipes as UNIX programs. They are small utilities available over HTTP that do one thing, and do it well. Webpipes follow the Unix philosophy:</p>
+				<h2>What are WebPipes?</h2>
+				<p>WebPipes is a work-in-progress proposal for linking together web services. Essentially, you can think of WebPipes as UNIX programs. They are small utilities available over HTTP that do one thing, and do it well. WebPipes follow the Unix philosophy:</p>
 				<ol>
 					<li>Write programs that do one thing and do it well.</li>
 					<li>Write programs to work together.</li>
@@ -85,53 +85,54 @@
 				
 				<hr class="soften">
 				<h2>How do they work?</h2>
-				<p>Since a Webpipe is essentially just a script that receives input via HTTP POST/GET, there's not much else to know than that.</p> 
+				<p>Since a WebPipe is essentially just a script that receives input via HTTP POST/GET, there's not much else to know other than how to structure the output. Their precise behavior is cover in the <a href="http://github.com/webpipes/spec">WebPipe Specification</a></p> 
 				
 				
 				<hr class="soften">
-				<h2>Where can I find a full list webpipes?</h2>
-				<p>You can view available webpipes on the <a href="http://github.com/webpipes/">Webpipes.org GitHub</a>.</p>
+				<h2>Where can I find a full list Webpipes?</h2>
+				<p>You can view a list of some <a href="#example"> example WebPipes</a>, or on the <a href="http://github.com/webpipes/">WebPipes.org GitHub</a>.</p>
 				
 				
 				<hr class="soften">
 				<a name="spec"></a>
-				<h2>Is there a Webpipe specification?</h2>
-				<p>To participate in the wider Webpipe ecosystem, a few conventions have been adopted which enables webpipes to "speak" to one another. Check out the <a href="http://github.com/webpipes/spec">Webpipe Spec</a>.</p>
+				<h2>Is there a WebPipe specification?</h2>
+				<p>To participate in the wider Webpipe ecosystem, a few conventions have been adopted which enables Webpipes to "speak" to one another. Check out the <a href="http://github.com/webpipes/spec">Webpipe Spec</a>.</p>
 
 				
 				<hr class="soften">
-				<h2>What's the difference between Webhooks and Webpipes?</h2>
-				<p>Although, webhooks share much in common with webpipes, each solve different problems. Webhooks were designed to solve the push/poll issues. Essentially, a Webhook is a URL that responds to events. For example, Github implements webhooks. On post-receive, Github calls a user-defined URL like a callback. If also feeds along a few arguments that tells you about that commit.</p>
-				<p>Likewise, Webpipes are essentially simple scripts publicly accessible via a URL. A webpipe is stateless. You POST/GET some input, and it'll provide you some output.</p>
+				<h2>What's the difference between WebHooks and Webpipes?</h2>
+				<p>Although, WebHooks share much in common with Webpipes, each solve different problems. WebHooks were designed, in part, to solve the push/poll. Essentially, a WebHook is a URL callback since it responds to events. For example, GitHub implements WebHooks. On post-receive, GitHub calls a user-defined URL like a callback. If also feeds along a few arguments that tells you about that commit.</p>
+				<p>Likewise, WebPipes are essentially simple scripts publicly accessible via a URL. You POST/GET some input, and it'll provide you some output.</p>
 				
 				<hr class="soften">
 				<h2>Why should I care?</h2>
-				<p>Although not yet widely implemented, Webpipes offer developers more leverage. By connecting small and independent units, the whole becomes greater than the sum of its parts.</p>
+				<p>Although not yet widely implemented, WebPipes offer developers more leverage. By connecting small and independent units, the whole becomes greater than the sum of its parts.</p>
 				
-				<p>But the real beauty is the potential for Webpipes to enable a new bred of programs. Some folks have even experimented with wrapping Unix programs around HTTP.</p>
+				<p>But the real beauty is the potential for WebPipes to enable the "programmable web" and an entirely manner for creating applications. Some folks have even experimented with wrapping Unix programs around HTTP.</p>
 				
 				<hr class="soften">
-				<h2>How do I implement Webpipes?</h2>
-				<p>Since Webpipes are basically just scriptlets, they're easy to implement. Read the <a href="http://www.github.com/webpipes/spec">Webpipes Spec</a> to learn the specifics.</p>
+				<h2>How do I implement WebPipe?</h2>
+				<p>Since WebPipe are basically just scriptlets, they're easy to implement. Read the <a href="http://www.github.com/webpipes/spec">Webpipes Specification</a> to learn the specifics.</p>
 				
 
-<!--				<hr class="soften">
+				<hr class="soften">
 				<a name="examples"></a>
-				<h2>Example Webpipes</h2>
+				<h2>Example WebPipes</h2>
 				<ul>
-					<li><a href="http://www.matthewghudson.com/projects/webpipes/css-minify/">CSS Minify</a> - Takes a CSS document and compresses it.</li>
-					<li><a href="http://www.matthewghudson.com/projects/webpipes/markdown-to-html/">Markdown to HTML</a> - Takes a Markdown document and converts it to HTML.</li>
-					<li><a href="http://www.matthewghudson.com/projects/webpipes/proxy/">Proxy</a> - Make HTTP requests via a proxy.</li>
-					<li><a href="http://www.matthewghudson.com/projects/webpipes/twilio-sms/">Twilio SMS</a> - Send a SMS message (requires Twilio account).</li>
+					<li><a href="http://www.github.com/webpipes/block-minify-css/">Minify CSS</a> - Takes CSS markup and compresses it.</li>
+					<li><a href="http://www.github.com/webpipes/block-parse-markdown/">Parse Markdown</a> - Takes Markdown data and converts it to HTML.</li>
+					<li><a href="http://www.github.com/webpipes/block-parse-rss/">Parse RSS</a> - Takes an RSS feed and splits it into an array of records.</li>
+					<li><a href="http://www.github.com/webpipes/block-send-email/">Send Email</a> - Send an email.</li>
+					<li><a href="http://www.github.com/webpipes/block-formatter/">Formatter</a> - Input a mustache template and some arguments, outputs a formatted string.</li>
 				</ul>
--->
+
 				<hr class="soften">
 				<h2>Resources</h2>
 				<ul>
-					<li>Code: <a href="http://www.matthewghudson.com/projects/webpipe.js/">Webpipe.js</a> - Javascript library for Webpipes. Use with Node.js or in the browser.</li>
-					<li>Code: <a href="http://www.matthewghudson.com/projects/webpipe.php/">Webpipe.php</a> - PHP library for Webpipes.</li>
-					<li>Spec: <a href="http://www.github.com/webpipes/spec">Webpipe Specification</a> - A definitive compilation of standards and best practices.</li>
-					<li>Group: <a href="https://groups.google.com/forum/#!forum/webpipes">Webpipe Group</a> -A Google Group for community discussion.</li>
+					<li>Specification: <a href="http://www.github.com/webpipes/spec">WebPipe Specification</a> - A definitive compilation of standards and best practices.</li>
+
+					<li>GitHub: <a href="https://groups.google.com/forum/#!forum/webpipes">WebPipe GitHub</a> - Repository of code, discussion, and issues.</li>
+					<li>Group: <a href="https://groups.google.com/forum/#!forum/webpipes">WebPipe Group</a> - A Google Group for community discussion.</li>
 					<li>Testing: <a href="http://www.postbin.org/">PostBin</a> - Debug webhooks/pipes by capturing and logging requests.</li>
 					<li>Testing: <a href="http://www.webhookapp.com/">WebHookApp</a> - Debug your HTTP requests. Auto-generates a cURL command.</li>
 				</ul>
@@ -139,9 +140,9 @@
 				<hr class="soften">
 				<h2>People</h2>
 				<ul>
-					<li><a href="http://www.progrium.com/">Jeff Lindsay</a> - Evangelist behind <a href="http://www.webhooks.org/">Webhooks.org</a></li>
-					<li><a href="http://blog.matthewghudson.com/">Matthew Hudson</a> - Maintains  <a href="http://www.matthewghudson.com/projects/webpipe.js/">Webpipe.js</a>, <a href="http://www.matthewghudson.com/projects/webpipe.php/">Webpipe.php</a></li>
-					<li><a href="http://tlrobinson.net/">Tom Robinson</a> - Evangelist, Hacker Extraordinaire</li>
+					<li><a href="http://www.progrium.com/">Jeff Lindsay</a> - Evangelist behind <a href="http://www.webhooks.org/">WebHooks.org</a></li>
+					<li><a href="http://www.matthewghudson.com/">Matthew Hudson</a> - Evangelist, maintains  <a href="http://www.matthewghudson.com/projects/webpipe.js/">Webpipe.js</a>, <a href="http://www.matthewghudson.com/projects/webpipe.php/">Webpipe.php</a></li>
+					<li><a href="http://tlrobinson.net/">Tom Robinson</a> - Evangelist, maintains  <a href="http://www.github.com/webpipes/node-webpipe">node-webpipe</a></li>
 				</ul>
 				
 			</div>
