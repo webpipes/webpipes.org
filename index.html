@@ -1,8 +1,5 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en"> 
 <head>
 	<meta charset="utf-8">
 
@@ -13,7 +10,7 @@
 	<meta name="description" content="WebPipes is a work-in-progress proposal for linking together web services." /> 
 	<meta name="author" content="WebPipes.org" />
 
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<meta property="fb:admins" content="25102034" />
 	<meta property="og:site_name" content="WebPipes.org" />
@@ -37,43 +34,94 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico"> 
 	
-	<link rel="stylesheet" href="http://www.matthewghudson.com/assets/css/projects.css">
+	<link rel="stylesheet" href="/assets/stylesheets/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/stylesheets/bootstrap-responsive.min.css">
 	
 	<style>
-		#body {
-			margin: 30px 0px;
+		body {
+			background-color: #FAF7F7;
+			font-family: "Lato", "Helvetica Neue",arial,sans-serif;
+			color: #211922;
+			font-size:1.15em;
+			margin-bottom: 1.25em;
 		}
-		.navbar .brand {
-			font-size: 26px;
+		
+		.container, 
+		.container li {
+			line-height:1.6em;
 		}
-		h2 {
+		
+		/* Webfont loading hack, prevent FOUC. */
+		* {
+			visibility:hidden;
+		}
+
+		.wf-active * {
+			visibility:visible;
+		}
+
+		.navbar-inner {
+			background:#90150E;
+		}
+		
+		.navbar .brand,
+		.navbar .brand a {
+			color:#fff;
+			text-shadow:none;
 			font-size:24px;
+			margin-bottom:0;
+			line-height:1.25em;
+		}
+		
+		.brand:hover {
+			background-color: #333;
+			background-color: rgba(255, 255, 255, 0.05);
+			color: #ffffff;
+			text-decoration: none;
+		}
+		
+		ul, ol {
+			padding: 0;
+			margin: 0 0 0.5em 2.5em;
+			color: #444;
+		}
+		
+		li {
+			color:#444;
+		}
+
+		hr.soften {
+			margin: 1.5em 0 1.25em 0;
+		}
+		
+		a, a:visited, a:active {
+			color: #90150E;
+			text-decoration: none;
+			background: none;
+			font-weight:bold;
+		}
+		a:hover {
+			color:#444;
 		}
 	</style>
 </head>
 
 <body>
-	<div class="navbar navbar-fixed-top">
+
+	<div class="navbar">
 		<div class="navbar-inner">
-			<div class="container">
-				
-				<ul id="header-menu" class="nav">
-	              <li class="active">
-	                <p class="brand">
-						<a href="http://www.webpipes.org/" target="_blank">WebPipes.org </a>
-					</p>
-	              </li>
-	            </ul>
-			</div>
+			<p class="brand">
+				<a href="http://www.webpipes.org/">WebPipes.org</a>
+			</p>
 		</div>
 	</div>
 	
 	<div class="container">
-		<div id="body" class="row"> 
+		<div class="row"> 
 			<div class="span16">
-			<hr class="soften">
 				<h2>What are WebPipes?</h2>
 				<p>WebPipes is a work-in-progress proposal for linking together web services. Essentially, you can think of WebPipes as UNIX programs. They are small utilities available over HTTP that do one thing, and do it well. WebPipes follow the Unix philosophy:</p>
+				
 				<ol>
 					<li>Write programs that do one thing and do it well.</li>
 					<li>Write programs to work together.</li>
@@ -96,7 +144,7 @@
 				<hr class="soften">
 				<a name="spec"></a>
 				<h2>Is there a WebPipe specification?</h2>
-				<p>To participate in the wider Webpipe ecosystem, a few conventions have been adopted which enables Webpipes to "speak" to one another. Check out the <a href="http://github.com/webpipes/spec">Webpipe Spec</a>.</p>
+				<p>To participate in the wider Webpipe ecosystem, a few conventions have been adopted which enables Webpipes to "speak" to one another. Check out the <a href="http://github.com/webpipes/spec">WebPipe Spec</a>.</p>
 
 				
 				<hr class="soften">
