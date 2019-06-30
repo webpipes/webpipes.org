@@ -10,7 +10,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-function SEO ({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -31,6 +31,9 @@ function SEO ({ description, lang, meta, title }) {
     <Helmet
       htmlAttributes={{
         lang
+      }}
+      bodyAttributes={{
+        className: 'w-100 sans-serif bg-white '
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
@@ -68,7 +71,13 @@ function SEO ({ description, lang, meta, title }) {
           content: metaDescription
         }
       ].concat(meta)}
-    />
+    >
+      <link
+        rel='stylesheet'
+        type='text/css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.min.css'
+      />
+    </Helmet>
   )
 }
 
