@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: #544c4c;
   font-family: 'Alegreya Sans', sans-serif;
 }
@@ -17,7 +17,7 @@ body {
 }
 
 main p {
-  max-width: 30em;
+  /*max-width: 30em;*/
 }
 
 main h2 {
@@ -62,20 +62,6 @@ main h2 {
   margin-left: auto;
 }
 
-@media screen and (min-width: 30em) {
-  .lh-title-ns {
-    line-height: 1.25;
-  }
-
-  .f1-ns {
-    font-size: 3rem;
-  }
-
-  .f4-ns {
-    font-size: 1.25rem;
-  }
-}
-
 footer svg {
   position: relative;
   top: 5px;
@@ -93,19 +79,28 @@ a,
 a:visited,
 a:active,
 a:hover {
-  color: #b67a02; /* #d4ab5a;*/
+  color: #b67a02;
   text-decoration: none;
   transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
-  background: none;
-  font-weight: bold;
-
-  line-height: 1em;
   display: inline-block;
+  line-height: 1em;
   border-bottom: solid 1px #d4ab5a;
 }
+
 a:hover {
   color: #d4ab5a;
   border-bottom: solid 1px #b67a02;
+}
+
+a.db,
+a.db:visited,
+a.db:active,
+a.db:hover {
+  display: block;
+}
+
+aside li {
+  list-style-type: none;
 }
 
 code {
@@ -116,7 +111,7 @@ ul,
 ol {
   padding: 0;
   margin: 0 0 0.5em 1em;
-  width: 30em;
+  /*max-width: 30em;*/
 }
 
 main li {
@@ -136,8 +131,32 @@ h6,
 
 hr {
   margin: 1.5em 0 1.25em 0;
-  max-width: 30em;
   border: 0;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #eee;
+}
+
+hr {
+  margin: 1.5em 0 1.5em 0;
+  border: 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+a.normalize {
+  display: none;
+}
+
+p code {
+  font-size: 0.8em;
+}
+
+::selection {
+  background-color: #d4ab5a;
+  color: #f0f0f0; /* Contrast friendly: hsla(200,0%,0%,.8)*/
+  text-shadow: none;
+}
+
+ul li > a:before {
+  display: block;
 }

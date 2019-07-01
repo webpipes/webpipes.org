@@ -7,6 +7,7 @@
   "dependencies": {
     "gatsby": "^2.10.4",
     "gatsby-image": "^2.2.3",
+    "gatsby-plugin-google-analytics": "^2.1.1",
     "gatsby-plugin-manifest": "^2.2.0",
     "gatsby-plugin-offline": "^2.2.0",
     "gatsby-plugin-react-helmet": "^3.1.0",
@@ -25,6 +26,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "clean": "rm -r public/ .cache/",
     "develop": "gatsby develop",
     "format": "eslint --fix src/**/*.{js,jsx}",
     "start": "npm run develop",

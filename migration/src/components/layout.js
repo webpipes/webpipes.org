@@ -10,6 +10,7 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Navigation from './navigation'
+import '../stylesheets/tachyons.min.css'
 import './layout.css'
 
 const Layout = ({ children }) => {
@@ -24,10 +25,18 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className='cf pa3 mw9 center'>
+    <div className='mw6 mw7-ns center pa3 ph5-ns'>
       <section className='cf'>
         <Navigation siteTitle={data.site.siteMetadata.title} />
-        <main className='fl w-80 pl4'>{children}</main>
+        <main className='fl w-80 pl4'>
+          <h1 className='mb0'>
+            Webpipes <span className='black-40 fw1'>(v0.1)</span>
+          </h1>
+          <h2 className='black-60 lh-copy mt0'>
+            Enable data piping across HTTP services.
+          </h2>
+          {children}
+        </main>
       </section>
       <footer className='w-100 mid-gray tc center'>
         <p>
