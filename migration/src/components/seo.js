@@ -74,6 +74,10 @@ function SEO({ description, lang, meta, title }) {
     >
       <meta name='viewport' content='width=device-width, initial-scale=1' />
       <link
+        href='https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans&display=swap'
+        rel='stylesheet'
+      />
+      <link
         rel='stylesheet'
         type='text/css'
         href='https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.min.css'

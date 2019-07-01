@@ -6,9 +6,22 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  color: #544c4c;
+  font-family: 'Alegreya Sans', sans-serif;
 }
-.athelas {
-  font-family: athelas, georgia, serif;
+
+.gatsby-image-wrapper {
+  border-radius: 0.25rem;
+}
+
+main p {
+  max-width: 30em;
+}
+
+main h2 {
+  margin-bottom: 0;
 }
 
 .fw9 {
@@ -76,8 +89,55 @@ footer svg {
   fill: red;
 }
 
-a {
-  color: #d4ab5a;
+a,
+a:visited,
+a:active,
+a:hover {
+  color: #b67a02; /* #d4ab5a;*/
   text-decoration: none;
   transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: none;
+  font-weight: bold;
+
+  line-height: 1em;
+  display: inline-block;
+  border-bottom: solid 1px #d4ab5a;
+}
+a:hover {
+  color: #d4ab5a;
+  border-bottom: solid 1px #b67a02;
+}
+
+code {
+  color: #bd10e0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 0.5em 1em;
+  width: 30em;
+}
+
+main li {
+  list-style-type: circle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.header {
+  font-family: 'Alegreya', athelas, georgia, serif;
+  color: #444444;
+}
+
+hr {
+  margin: 1.5em 0 1.25em 0;
+  max-width: 30em;
+  border: 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #eee;
 }
