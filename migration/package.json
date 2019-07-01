@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "webpipes.org",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Gatsby-powered website for webpipes.org",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Matthew Hudson <m@hudson.dev>",
   "dependencies": {
     "gatsby": "^2.10.4",
     "gatsby-image": "^2.2.3",
@@ -25,9 +25,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "clean": "rm -r public/ .cache/",
-    "develop": "gatsby develop",
+    "build": "npm run clean && gatsby build",
+    "clean": "gatsby clean",
+    "develop": "npm run clean && gatsby develop",
     "format": "eslint --fix src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",

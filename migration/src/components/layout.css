@@ -10,6 +10,7 @@ body {
   font-size: 1.1rem;
   color: #544c4c;
   font-family: 'Alegreya Sans', sans-serif;
+  text-rendering: optimizelegibilit;
 }
 
 .gatsby-image-wrapper {
@@ -22,31 +23,6 @@ main p {
 
 main h2 {
   margin-bottom: 0;
-}
-
-.fw9 {
-  font-weight: 900;
-}
-
-.lh-copy {
-  line-height: 1.5;
-}
-
-.pa4 {
-  padding: 2rem;
-}
-
-.ph0 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.f4 {
-  font-size: 1.25rem;
-}
-
-.f6 {
-  font-size: 0.875rem;
 }
 
 .measure {
@@ -155,8 +131,4 @@ p code {
   background-color: #d4ab5a;
   color: #f0f0f0; /* Contrast friendly: hsla(200,0%,0%,.8)*/
   text-shadow: none;
-}
-
-ul li > a:before {
-  display: block;
 }
