@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, title }) {
         lang
       }}
       bodyAttributes={{
-        className: 'w-100 sans-serif bg-white '
+        className: 'w-100'
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
