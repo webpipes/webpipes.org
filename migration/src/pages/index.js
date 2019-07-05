@@ -9,10 +9,10 @@ const IndexPage = () => (
     <SEO title={'Home'} />
     <h2>First... what are Webpipes?</h2>
     <p>
-      Webpipes is a work-in-progress proposal for linking together web services.
-      Essentially, you can think of Webpipes as UNIX programs. They are small
-      utilities available over HTTP that do one thing, and do it well. Webpipes
-      follow the Unix philosophy:
+      Webpipes are a work-in-progress proposal for linking together web
+      services. Essentially, you can think of Webpipes as UNIX programs.
+      Webpipes are small utilities available over HTTP that do one thing, and do
+      it well. Webpipes follow the Unix philosophy:
     </p>
     <ul>
       <li>Write programs that do one thing and do it well.</li>
@@ -56,7 +56,7 @@ const IndexPage = () => (
     <p>
       Once Webpipe registries become available, URL calls can be reduced down to
       just a namespace, like <code>@github/convert-markdown</code> or{' '}
-      <code>@google/vision/detect-image-text</code>.
+      <code>@google/vision/detect-image-text</code> .
     </p>
 
     <hr />

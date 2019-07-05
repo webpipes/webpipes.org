@@ -25,12 +25,12 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className='mw6 mw7-ns center pa3 ph5-ns'>
+    <div className='mw6 mw7-ns center pt4 pa3 ph5-ns'>
       <section className='cf'>
         <Navigation siteTitle={data.site.siteMetadata.title} />
         <main className='fl w-80 pl4'>
-          <h1 className='mb0'>
-            Webpipes <span className='black-40 fw1'>(v0.1)</span>
+          <h1 className='mb0 black'>
+            Webpipes <span className='black-40 fw1'>(v0.2)</span>
           </h1>
           <h2 className='black-60 lh-copy mt0'>
             Enable data piping across HTTP services.

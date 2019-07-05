@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#d4ab5a`,
         theme_color: `#d4ab5a`,
         display: `minimal-ui`,
-        icon: `src/images/webpipes-icon.png` // This path is relative to the root of the site.
+        icon: `src/images/webpipes-icon.svg` // `src/images/webpipes-icon.png` // This path is relative to the root of the site.
       }
     },
     `gatsby-plugin-google-analytics`,
