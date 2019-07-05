@@ -25,17 +25,14 @@ body {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
   text-rendering: optimizelegibility;
 }
-
+/*
 .sans-serif {
   font-family: 'Alegreya Sans', sans-serif;
 }
+*/
 
 .gatsby-image-wrapper {
   border-radius: 0.25rem;
-}
-
-main p {
-  /*max-width: 30em;*/
 }
 
 main h2 {
@@ -53,19 +50,6 @@ main h2 {
 .center {
   margin-right: auto;
   margin-left: auto;
-}
-
-footer svg {
-  position: relative;
-  top: 5px;
-}
-
-.symbol-code {
-  fill: var(--code-purple);
-}
-
-.symbol-heart {
-  fill: var(--core-pink);
 }
 
 a,
@@ -143,18 +127,22 @@ p code {
   color: #f0f0f0; /* Contrast friendly: hsla(200,0%,0%,.8)*/
   text-shadow: none;
 }
-
+/*
 h1 img {
   width: 100%;
-  /*
+ 
   padding: 15px;
   background-color: #fff;
   border-radius: 0.25em;
   border-style: solid;
   border-width: 1px;
-  */
-}
+
+}  */
 h1 a,
 h1 a:hover {
   border: none;
+}
+
+.brand {
+  max-width: 260px;
 }
