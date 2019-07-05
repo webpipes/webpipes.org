@@ -19,9 +19,10 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  font-size: 1.1rem;
+  font-size: 1.5em;
   color: #544c4c;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: avenir next, avenir, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
   text-rendering: optimizelegibility;
 }
 
@@ -144,6 +145,7 @@ p code {
 }
 
 h1 img {
+  width: 100%;
   /*
   padding: 15px;
   background-color: #fff;

@@ -15,10 +15,13 @@ const Header = ({ siteTitle }) => (
     <p className='f5 f4-m f3-l fw2 black-70 mb0 lh-copy'>Overview</p>
     <ul className='ml0 pl0'>
       <li>
-        <Link to='/'>Introduction</Link>
+        <Link to='/'>Home</Link>
       </li>
       <li>
         <Link to='https://github.com/webpipes/spec'>Specification</Link>
+      </li>
+      <li>
+        <Link to='/faq/'>FAQ</Link>
       </li>
       <li>
         <Link to='/history/'>History</Link>
@@ -34,6 +37,9 @@ const Header = ({ siteTitle }) => (
       </li>
       <li>
         <a href='https://github.com/webpipes/webpipe.js/'>JavaScript Client</a>
+      </li>
+      <li>
+        <a href='https://github.com/fkautz/golang-webpipes'>Go Server</a>
       </li>
       <li>
         <a href='https://github.com/matthewhudson/webpipe.php'>PHP Client</a>
