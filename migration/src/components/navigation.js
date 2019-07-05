@@ -2,12 +2,12 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import Link from '../components/link'
-import imageLogo from '../images/webpipes-spec-icon.svg'
+import imageLogo from '../images/webpipes-icon.svg'
 
 const Header = ({ siteTitle }) => (
   <aside className='fl w-20'>
     <h1 className='mb0'>
-      <Link to='/' className='db'>
+      <Link to='/' className='db bn'>
         <img src={imageLogo} />
       </Link>
     </h1>

@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
             Webpipes <span className='black-40 fw1'>(v0.2)</span>
           </h1>
           <h2 className='black-60 lh-copy mt0'>
-            Enable data piping across HTTP services.
+            Building a programmable web for everyone.
           </h2>
           {children}
         </main>
@@ -56,7 +56,7 @@ const Layout = ({ children }) => {
           with{' '}
           <svg
             height='20'
-            className='symbol-heart'
+            className='symbol-icon fill-pink'
             aria-label='love'
             viewBox='0 0 12 16'
             version='1.1'

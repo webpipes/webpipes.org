@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: #fefefe;
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -123,13 +123,6 @@ h6,
 }
 
 hr {
-  margin: 1.5em 0 1.25em 0;
-  border: 0;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #eee;
-}
-
-hr {
   margin: 1.5em 0 1.5em 0;
   border: 0;
   border-top: 1px solid transparent;
@@ -145,7 +138,21 @@ p code {
 }
 
 ::selection {
-  background-color: #d4ab5a;
+  background-color: rgba(0, 0, 0, 0.99);
   color: #f0f0f0; /* Contrast friendly: hsla(200,0%,0%,.8)*/
   text-shadow: none;
+}
+
+h1 img {
+  /*
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 0.25em;
+  border-style: solid;
+  border-width: 1px;
+  */
+}
+h1 a,
+h1 a:hover {
+  border: none;
 }
