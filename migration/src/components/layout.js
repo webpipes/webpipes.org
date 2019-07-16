@@ -26,10 +26,17 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className='mw6 mw7-ns center pt4 pa3 ph5-ns'>
+    <div className="mw6 mw7-ns center pt4 pb6 pa2 ph5-ns">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <section className='cf'>
-        <main className='fl w-8 pl4'>{children}</main>
+      <p className="tc pt0 mt0">
+        Join us on{' '}
+        <a href="https://join.slack.com/t/webpipes/shared_invite/enQtNjgwMzUzMDk1NzAxLTUwNDE5ZTJmMTgyMWI4MjgxOGNjOWEzNzU3Yzc5MjM0M2E1MzJlYTI0OTY1Njc3YWJhODMxYzZkZjY2MzMyNDY">
+          Slack
+        </a>
+        , and <a href="https://www.github.com/webpipes">GitHub</a>.
+      </p>
+      <section className="cf">
+        <main className="fl w-8">{children}</main>
       </section>
     </div>
   )

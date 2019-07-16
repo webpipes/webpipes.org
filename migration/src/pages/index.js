@@ -8,10 +8,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title={'Home'} />
     <p>
-      Webpipes are a work-in-progress proposal for linking together web
-      services. Essentially, you can think of Webpipes as UNIX programs.
-      Webpipes are small utilities available over HTTP that do one thing, and do
-      it well. Webpipes follow the Unix philosophy:
+      WebPipes are a work-in-progress open proposal for linking together web
+      services. Essentially, you can think of Webpipes as the web version of
+      Unix programs; small utilities available over HTTP that do one thing, and
+      do it well. Fittingly, Webpipes follow the Unix philosophy:
     </p>
     <ul>
       <li>Write programs that do one thing and do it well.</li>
@@ -36,7 +36,7 @@ const IndexPage = () => (
     </p>
     <p>
       Further, this common input/output interface essentially eliminates the
-      time necessary to discover, research, learn & implement new APIs.All
+      time necessary to discover, research, learn & implement new APIs. All
       developers need to know is the name of an API to begin making calls.
     </p>
 
@@ -49,7 +49,7 @@ const IndexPage = () => (
         maxwidth: '510px',
         width: '100%'
       }}
-      sandbox='allow-scripts allow-same-origin'
+      sandbox="allow-scripts allow-same-origin"
     />
 
     <p>
@@ -70,9 +70,23 @@ const IndexPage = () => (
       libraries.{' '}
     </p>
     <p>
-      Precise behavior is covered in the{' '}
-      <a href='https://github.com/webpipes/spec'>specification</a> .
+      Precise requirements are covered in the{' '}
+      <a href="https://github.com/webpipes/spec">specification</a> .
     </p>
+
+    <hr />
+    <h2>Specification Authors</h2>
+    <ul>
+      <li>
+        <a href="http://www.progrium.com/">Jeff Lindsay</a>
+      </li>
+      <li>
+        <a href="https://hudson.dev/">Matthew Hudson</a>
+      </li>
+      <li>
+        <a href="http://tlrobinson.net/">Tom Robinson</a>
+      </li>
+    </ul>
   </Layout>
 )
 

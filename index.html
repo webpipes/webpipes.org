@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-react-helmet="lang">
   <head>
     <meta charset="utf-8" />
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-    <title>WebPipes.org</title>
-
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Home | Webpipes.org</title>
     <meta
       name="description"
       content="WebPipes is a work-in-progress proposal for linking together web services."
@@ -23,91 +23,155 @@
       content="WebPipes is a work-in-progress proposal for linking together web services."
     />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:image" content="/assets/images/webpipes-200.png" />
+    <meta property="og:image" content="/assets/images/icon-256.png" />
     <meta property="og:title" content="WebPipes.org" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.webpipes.org/" />
+    <meta property="og:url" content="http://webpipes.org/" />
 
     <meta
       name="google-site-verification"
       content="AclrAJJpdhhlotcvRy14yk0pFRkPGDTKaFxB9CExsJY"
     />
 
-    <link rel="canonical" href="http://www.webpipes.org/" />
+    <link rel="canonical" href="http://webpipes.org/" />
 
     <link
-      rel="author"
-      href="https://plus.google.com/116184875130897010742/posts"
+      rel="shortcut icon"
+      href="/assets/images/icon-48x48.png?v=d58364ffbba8433b452312b52b2151fc"
     />
-
-    <link rel="apple-touch-icon" href="/assets/images/webpipes-57.png" />
+    <meta name="theme-color" content="#d4ab5a" />
+    <link
+      rel="apple-touch-icon"
+      sizes="48x48"
+      href="/assets/images/icon-48x48.png?v=d58364ffbba8433b452312b52b2151fc"
+    />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="/assets/images/webpipes-72.png"
+      href="/assets/images/icon-72x72.png?v=d58364ffbba8433b452312b52b2151fc"
     />
     <link
       rel="apple-touch-icon"
-      sizes="114x114"
-      href="/assets/images/webpipes-114.png"
+      sizes="96x96"
+      href="/assets/images/icon-96x96.png?v=d58364ffbba8433b452312b52b2151fc"
     />
-
-    <link rel="shortcut icon" href="/favicon.ico" />
-
     <link
-      href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.no-icons.min.css"
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/assets/images/icon-144x144.png?v=d58364ffbba8433b452312b52b2151fc"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="/assets/images/icon-192x192.png?v=d58364ffbba8433b452312b52b2151fc"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="256x256"
+      href="/assets/images/icon-256x256.png?v=d58364ffbba8433b452312b52b2151fc"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="384x384"
+      href="/assets/images/icon-384x384.png?v=d58364ffbba8433b452312b52b2151fc"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="512x512"
+      href="/assets/images/icon-512x512.png?v=d58364ffbba8433b452312b52b2151fc"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans&amp;display=swap"
       rel="stylesheet"
     />
-
     <link
-      href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"
       rel="stylesheet"
+      href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
     />
-
+    .
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
+      :root {
+        --code-pink: #e83e8c;
+        --code-black: #333333;
+        --code-green: #72f2d1;
+        --code-grey: #ddd;
+        --code-blue: #4285f4;
+        --code-purple: #7247ff;
+        --code-green-dark: #03a678;
+        --size-medium: 1em;
+        --border-radius: 0.25em;
+        --font-size-large: 2em;
+        --text-max-width: 30em;
+        --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+          Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
       body {
-        font-family: "Inconsolata", monospace, sans-serif;
-        color: #494949;
-        font-size: 1.15em;
-        margin-bottom: 1.25em;
+        background-color: #fefefe;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        font-size: 1.5em;
+        color: #544c4c;
+        font-family: avenir next, avenir, -apple-system, BlinkMacSystemFont,
+          'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+        text-rendering: optimizelegibility;
+      }
+      /*
+.sans-serif {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+*/
+
+      .gatsby-image-wrapper {
+        border-radius: 0.25rem;
       }
 
-      ::selection {
-        background-color: #79ffe1;
-        color: #000;
-      }
-
-      h2 {
-        font-size: 22px;
-        line-height: 30px;
-      }
-
-      .container,
-      .container li {
-        line-height: 1.75em;
-        list-style-type: circle;
-      }
-
-      .navbar-inner {
-        background: #067df7;
-      }
-
-      .navbar .brand,
-      .navbar .brand a {
-        color: #fff;
-        text-shadow: none;
-        font-size: 24px;
+      main h2 {
         margin-bottom: 0;
-        line-height: 1.25em;
-        font-weight: 700;
-        letter-spacing: 2px;
       }
 
-      .brand:hover {
-        background-color: #333;
-        background-color: rgba(255, 255, 255, 0.05);
-        color: #ffffff;
+      .measure {
+        max-width: 30em;
+      }
+
+      .measure-narrow {
+        max-width: 20em;
+      }
+
+      .center {
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      a,
+      a:visited,
+      a:active,
+      a:hover {
+        color: var(--code-blue);
         text-decoration: none;
+        transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+        display: inline;
+        line-height: 1em;
+        border-bottom: solid 1px var(--code-purple);
+        transition: 0.2s ease;
+      }
+
+      a:hover {
+        color: var(--code-purple);
+        border-bottom: solid 1px var(--code-blue);
+      }
+
+      a.db,
+      a.db:visited,
+      a.db:active,
+      a.db:hover {
+        display: block;
+      }
+
+      aside li {
+        list-style-type: none;
       }
 
       code {
@@ -118,233 +182,146 @@
       ol {
         padding: 0;
         margin: 0 0 0.5em 1em;
+        /*max-width: 30em;*/
       }
 
-      hr.soften {
-        margin: 1.5em 0 1.25em 0;
+      main li {
+        list-style-type: circle;
+        font-size: 0.95em;
+        opacity: 0.9;
       }
 
-      p {
-        margin: 0 0 1em;
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .header {
+        font-family: 'Alegreya Sans', athelas, georgia, serif;
+        color: #444444;
       }
 
-      a,
-      a:visited,
-      a:active,
-      a:hover {
-        color: #067df7;
-        text-decoration: none;
-        background: none;
-        font-weight: bold;
+      hr {
+        margin: 1.5em 0 1.5em 0;
+        border: 0;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
       }
-      a:hover {
-        text-decoration: underline;
+
+      a.normalize {
+        display: none;
+      }
+
+      p code {
+        font-size: 0.8em;
+      }
+
+      ::selection {
+        background-color: rgba(0, 0, 0, 0.99);
+        color: #f0f0f0; /* Contrast friendly: hsla(200,0%,0%,.8)*/
+        text-shadow: none;
+      }
+
+      h1 a,
+      h1 a:hover {
+        border: none;
+      }
+
+      .brand {
+        max-width: 185px;
       }
     </style>
   </head>
-
-  <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <p class="brand"><a href="http://www.webpipes.org/">WebPipes</a></p>
+  <body classname="w-100">
+    <div tabindex="-1" role="group" style="outline: none;">
+      <div class="mw6 mw7-ns center pt4 pa2 ph5-ns">
+        <header class="bg-white black-80 tc pv3">
+          <img
+            class="brand"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwMCIgaGVpZ2h0PSIyMzM0IiB2aWV3Qm94PSIwIDAgMjU2IDIzOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCI+PHBhdGggZD0iTTExOS41NCAxMDAuNTAzYy0xMC42MSAxNy44MzYtMjAuNzc1IDM1LjEwOC0zMS4xNTIgNTIuMjUtMi42NjUgNC40MDEtMy45ODQgNy45ODYtMS44NTUgMTMuNTggNS44NzggMTUuNDU0LTIuNDE0IDMwLjQ5My0xNy45OTggMzQuNTc1LTE0LjY5NyAzLjg1MS0yOS4wMTYtNS44MDgtMzEuOTMyLTIxLjU0My0yLjU4NC0xMy45MjcgOC4yMjQtMjcuNTggMjMuNTgtMjkuNzU3IDEuMjg2LS4xODQgMi42LS4yMDUgNC43NjItLjM2N2wyMy4zNTgtMzkuMTY4QzczLjYxMiA5NS40NjUgNjQuODY4IDc4LjM5IDY2LjgwMyA1Ny4yM2MxLjM2OC0xNC45NTcgNy4yNS0yNy44ODMgMTgtMzguNDc3IDIwLjU5LTIwLjI4OCA1Mi4wMDItMjMuNTczIDc2LjI0Ni04LjAwMSAyMy4yODQgMTQuOTU4IDMzLjk0OCA0NC4wOTQgMjQuODU4IDY5LjAzMS02Ljg1NC0xLjg1OC0xMy43NTYtMy43MzItMjEuMzQzLTUuNzkgMi44NTQtMTMuODY1Ljc0My0yNi4zMTUtOC42MDgtMzYuOTgxLTYuMTc4LTcuMDQyLTE0LjEwNi0xMC43MzMtMjMuMTItMTIuMDkzLTE4LjA3Mi0yLjczLTM1LjgxNSA4Ljg4LTQxLjA4IDI2LjYxOC01Ljk3NiAyMC4xMyAzLjA2OSAzNi41NzUgMjcuNzg0IDQ4Ljk2N3oiIGZpbGw9IiNkMzMxMzEiLz48cGF0aCBkPSJNMTQ5Ljg0MSA3OS40MWM3LjQ3NSAxMy4xODcgMTUuMDY1IDI2LjU3MyAyMi41ODcgMzkuODM2IDM4LjAyLTExLjc2MyA2Ni42ODYgOS4yODQgNzYuOTcgMzEuODE3IDEyLjQyMiAyNy4yMTkgMy45MyA1OS40NTctMjAuNDY1IDc2LjI1LTI1LjA0IDE3LjIzOC01Ni43MDcgMTQuMjkzLTc4Ljg5Mi03Ljg1MSA1LjY1NC00LjczMyAxMS4zMzYtOS40ODcgMTcuNDA3LTE0LjU2NiAyMS45MTIgMTQuMTkyIDQxLjA3NyAxMy41MjQgNTUuMzA1LTMuMjgyIDEyLjEzMy0xNC4zMzcgMTEuODctMzUuNzE0LS42MTUtNDkuNzUtMTQuNDA4LTE2LjE5Ny0zMy43MDctMTYuNjkxLTU3LjAzNS0xLjE0My05LjY3Ny0xNy4xNjgtMTkuNTIyLTM0LjE5OS0yOC44OTMtNTEuNDkxLTMuMTYtNS44MjgtNi42NDgtOS4yMS0xMy43Ny0xMC40NDMtMTEuODkzLTIuMDYyLTE5LjU3MS0xMi4yNzUtMjAuMDMyLTIzLjcxNy0uNDUzLTExLjMxNiA2LjIxNC0yMS41NDUgMTYuNjM0LTI1LjUzIDEwLjMyMi0zLjk0OSAyMi40MzUtLjc2MiAyOS4zNzggOC4wMTQgNS42NzQgNy4xNyA3LjQ3NyAxNS4yNCA0LjQ5MSAyNC4wODMtLjgzIDIuNDY2LTEuOTA1IDQuODUyLTMuMDcgNy43NzR6IiBmaWxsPSIjZmZiMDIwIi8+PHBhdGggZD0iTTE2Ny43MDcgMTg3LjIxaC00NS43N2MtNC4zODcgMTguMDQ0LTEzLjg2MyAzMi42MTItMzAuMTkgNDEuODc2LTEyLjY5MyA3LjItMjYuMzczIDkuNjQxLTQwLjkzMyA3LjI5LTI2LjgwOC00LjMyMy00OC43MjgtMjguNDU2LTUwLjY1OC01NS42My0yLjE4NC0zMC43ODQgMTguOTc1LTU4LjE0NyA0Ny4xNzgtNjQuMjkzIDEuOTQ3IDcuMDcxIDMuOTE1IDE0LjIxIDUuODYyIDIxLjI2NC0yNS44NzYgMTMuMjAyLTM0LjgzMiAyOS44MzYtMjcuNTkgNTAuNjM2IDYuMzc1IDE4LjMwNCAyNC40ODQgMjguMzM3IDQ0LjE0NyAyNC40NTcgMjAuMDgtMy45NjIgMzAuMjA0LTIwLjY1IDI4Ljk2OC00Ny40MzIgMTkuMDM2IDAgMzguMDg4LS4xOTcgNTcuMTI2LjA5NyA3LjQzNC4xMTcgMTMuMTczLS42NTQgMTguNzczLTcuMjA4IDkuMjItMTAuNzg0IDI2LjE5MS05LjgxMSAzNi4xMjEuMzc0IDEwLjE0OCAxMC40MDkgOS42NjIgMjcuMTU3LTEuMDc3IDM3LjEyNy0xMC4zNjEgOS42Mi0yNi43MyA5LjEwNi0zNi40MjQtMS4yNi0xLjk5Mi0yLjEzNi0zLjU2Mi00LjY3My01LjUzMy03LjI5OHoiIGZpbGw9IiMwMDc0RDkiLz48L3N2Zz4="
+          />
+          <h1 class="mb0 black lh-title fw7 pa0 f1">Webpipes</h1>
+          <h2 class="black-60 lh-copy mt0 mb0 f2">
+            Building a programmable web for everyone.
+          </h2>
+        </header>
+        <p class="tc pt0 mt0">
+          Join us on
+          <a
+            href="https://join.slack.com/t/webpipes/shared_invite/enQtNjgwMzUzMDk1NzAxLTUwNDE5ZTJmMTgyMWI4MjgxOGNjOWEzNzU3Yzc5MjM0M2E1MzJlYTI0OTY1Njc3YWJhODMxYzZkZjY2MzMyNDY"
+          >
+            Slack
+          </a>
+          , and <a href="https://www.github.com/webpipes">GitHub</a>.
+        </p>
+        <section class="cf">
+          <main class="fl w-8">
+            <p>
+              WebPipes are a work-in-progress open proposal for linking together
+              web services. Essentially, you can think of Webpipes as the web
+              version of Unix programs; small utilities available over HTTP that
+              do one thing, and do it well. Fittingly, Webpipes follow the Unix
+              philosophy:
+            </p>
+            <ul>
+              <li>Write programs that do one thing and do it well.</li>
+              <li>Write programs to work together.</li>
+              <li>
+                Write programs to handle text streams, because that is a
+                universal interface.
+              </li>
+            </ul>
+            <p>
+              The magic comes when you start chaining pipes together. You can
+              create really amazing workflows by combining a few small pieces
+              together.
+            </p>
+            <hr />
+            <h2>But... why?</h2>
+            <p>
+              Aside from the beauty of composing pipelines, individual Webpipes
+              can be called directly as well. In fact, Webpipes and pipelines
+              both share the same interface for handling inputs and outputs.
+              This common interface provides users easy use since clients can
+              abstract away the underlying logic and requirements behind
+              requests, inputs, outputs, and types.
+            </p>
+            <p>
+              Further, this common input/output interface essentially eliminates
+              the time necessary to discover, research, learn &amp; implement
+              new APIs. All developers need to know is the name of an API to
+              begin making calls.
+            </p>
+            <iframe
+              src="https://carbon.now.sh/embed/?bg=rgba(255%2C255%2C255%2C1)&amp;t=one-light&amp;wt=none&amp;l=javascript&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=true&amp;pv=0px&amp;ph=0px&amp;ln=false&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=1x&amp;wm=false&amp;code=const%2520webpipeURL%2520%253D%2520'https%253A%252F%252Fparse-markdown-wp.com%252F'%250Aconst%2520inputs%2520%253D%2520%257B%2520markdown%253A%2520'*hello%2520world*'%2520%257D%250A%250Awebpipe.execute(webpipeURL%252C%2520inputs%252C%2520(err%252C%2520data)%2520%253D%253E%2520%257B%250A%2520%2520if%2520(err)%2520return%2520console.warn(err)%250A%250A%2520%2520%252F%252F%2520Prints%2520the%2520response%2520of%2520the%2520Parse%2520Markdown%2520webpipe.%250A%2520%2520console.log(data)%250A%257D)%250A"
+              sandbox="allow-scripts allow-same-origin"
+              style="height: 275px; border: 0px; overflow: hidden; width: 100%;"
+            ></iframe>
+            <p>
+              Once Webpipe registries become available, URL calls can be reduced
+              down to just a namespace, like
+              <code>@github/convert-markdown</code> or
+              <code>@google/vision/detect-image-text</code> .
+            </p>
+            <hr />
+            <h2>How do they work?</h2>
+            <p>
+              Since a Webpipe is language endpoint and essentially just a script
+              that receives input via HTTP POST/GET, there's not much else to
+              know other than how to structure the output.
+            </p>
+            <p>
+              The core behaviorial requirements are handled by client and server
+              libraries.
+            </p>
+            <p>
+              Precise requirements are covered in the
+              <a href="https://github.com/webpipes/spec">specification</a> .
+            </p>
+          </main>
+        </section>
       </div>
     </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="span16">
-          <h2>What are WebPipes?</h2>
-          <p>
-            WebPipes is a work-in-progress proposal for linking together web
-            services. Essentially, you can think of WebPipes as UNIX programs.
-            They are small utilities available over HTTP that do one thing, and
-            do it well. WebPipes follow the Unix philosophy:
-          </p>
-
-          <ol>
-            <li>Write programs that do one thing and do it well.</li>
-            <li>Write programs to work together.</li>
-            <li>
-              Write programs to handle text streams, because that is a universal
-              interface.
-            </li>
-          </ol>
-
-          <p>
-            The magic comes when you start chaining pipes together. You can
-            create really amazing workflows by combining a few small pieces
-            together.
-          </p>
-
-          <hr class="soften" />
-          <h2>How do they work?</h2>
-          <p>
-            Since a WebPipe is essentially just a script that receives input via
-            HTTP POST/GET, there's not much else to know other than how to
-            structure the output. Their precise behavior is covered in the
-            <a href="http://github.com/webpipes/spec">WebPipe Specification</a>.
-          </p>
-
-          <hr class="soften" />
-          <h2>Where can I find a full list WebPipes?</h2>
-          <p>
-            You can view a list of some
-            <a href="#examples"> example WebPipes</a>, or on the
-            <a href="http://github.com/webpipes/">WebPipes.org GitHub</a>.
-          </p>
-
-          <hr class="soften" />
-          <a name="spec"></a>
-          <h2>Is there a WebPipe specification?</h2>
-          <p>
-            To participate in the wider WebPipe ecosystem, a few conventions
-            have been adopted which enables WebPipes to "speak" to one another.
-            Check out the
-            <a href="http://github.com/webpipes/spec">WebPipe Spec</a>.
-          </p>
-
-          <hr class="soften" />
-          <h2>What's the difference between WebHooks and WebPipes?</h2>
-          <p>
-            Although, WebHooks share much in common with WebPipes, each solve
-            different problems. WebHooks were designed, in part, to solve the
-            push/poll. Essentially, a WebHook is a URL callback since it
-            responds to events. For example, GitHub implements WebHooks. On
-            post-receive, GitHub calls a user-defined URL like a callback. It
-            also feeds along a few arguments that tells you about that commit.
-          </p>
-          <p>
-            Likewise, WebPipes are essentially simple scripts publicly
-            accessible via a URL. You POST/GET some input, and it'll provide you
-            some output.
-          </p>
-
-          <hr class="soften" />
-          <h2>Why should I care?</h2>
-          <p>
-            Although not yet widely implemented, WebPipes offer developers more
-            leverage. By connecting small and independent units, the whole
-            becomes greater than the sum of its parts.
-          </p>
-
-          <p>
-            But the real beauty is the potential for WebPipes to enable the
-            "programmable web" and an entirely manner for creating applications.
-            Some folks have even experimented with wrapping Unix programs around
-            HTTP.
-          </p>
-
-          <hr class="soften" />
-          <h2>How do I implement WebPipes?</h2>
-          <p>
-            Since WebPipes are basically just scriptlets, they're easy to
-            implement. Read the
-            <a href="http://www.github.com/webpipes/spec"
-              >WebPipes Specification</a
-            >
-            to learn the specifics.
-          </p>
-
-          <hr class="soften" />
-          <a name="examples"></a>
-          <h2>Example WebPipes</h2>
-          <ul>
-            <li>
-              <a href="http://www.github.com/webpipes/block-minify-css/"
-                >Minify CSS</a
-              >
-              - Takes CSS markup and compresses it.
-            </li>
-            <li>
-              <a href="http://www.github.com/webpipes/block-parse-markdown/"
-                >Parse Markdown</a
-              >
-              - Takes Markdown data and converts it to HTML.
-            </li>
-            <li>
-              <a href="http://www.github.com/webpipes/block-parse-rss/"
-                >Parse RSS</a
-              >
-              - Takes an RSS feed and splits it into an array of records.
-            </li>
-            <li>
-              <a href="http://www.github.com/webpipes/block-send-email/"
-                >Send Email</a
-              >
-              - Send an email.
-            </li>
-            <li>
-              <a href="http://www.github.com/webpipes/block-formatter/"
-                >Formatter</a
-              >
-              - Input a mustache template and some arguments, outputs a
-              formatted string.
-            </li>
-          </ul>
-
-          <p>
-            See more in the
-            <a href="http://registry.webpipes.org/">WebPipe Registry &rarr;</a>
-          </p>
-
-          <hr class="soften" />
-          <h2>Resources</h2>
-          <ul>
-            <li>
-              Specification:
-              <a href="http://www.github.com/webpipes/spec"
-                >WebPipe Specification</a
-              >
-              - A definitive compilation of standards and best practices.
-            </li>
-
-            <li>
-              GitHub:
-              <a href="http://www.github.com/webpipes">WebPipes GitHub</a> -
-              Repository of code, discussion, and issues.
-            </li>
-            <li>
-              Group:
-              <a href="https://groups.google.com/forum/#!forum/webpipes"
-                >WebPipe Group</a
-              >
-              - A Google Group for community discussion.
-            </li>
-            <li>
-              Testing: <a href="http://www.postbin.org/">PostBin</a> - Debug
-              webhooks/pipes by capturing and logging requests.
-            </li>
-            <li>
-              Testing: <a href="http://www.webhookapp.com/">WebHookApp</a> -
-              Debug your HTTP requests. Auto-generates a cURL command.
-            </li>
-          </ul>
-
-          <hr class="soften" />
-          <h2>Specification Authors</h2>
-          <ul>
-            <li>
-              <a href="http://www.progrium.com/">Jeff Lindsay</a> - Creator and
-              evangelist of <a href="http://www.webhooks.org/">WebHooks</a>
-            </li>
-            <li>
-              <a href="https://thematthewhudson.com/">Matthew Hudson</a> -
-              Maintains
-              <a href="https://github.com/webpipes/webpipe.js/">WebPipe.js</a>,
-              <a href="https://github.com/matthewhudson/webpipe.php"
-                >Webpipe.php</a
-              >
-            </li>
-            <li>
-              <a href="http://tlrobinson.net/">Tom Robinson</a> - Maintains
-              <a href="http://www.github.com/webpipes/node-webpipe"
-                >node-webpipe</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- ! end of .container -->
   </body>
 </html>

@@ -94,6 +94,8 @@ ol {
 
 main li {
   list-style-type: circle;
+  font-size: .95em;
+  opacity: 0.9;
 }
 
 h1,
@@ -103,7 +105,7 @@ h4,
 h5,
 h6,
 .header {
-  font-family: 'Alegreya', athelas, georgia, serif;
+  font-family: 'Alegreya Sans', athelas, georgia, serif;
   color: #444444;
 }
 
@@ -144,5 +146,5 @@ h1 a:hover {
 }
 
 .brand {
-  max-width: 260px;
+  max-width: 185px;
 }

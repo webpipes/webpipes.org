@@ -4,16 +4,13 @@ import React from 'react'
 import imageLogo from '../images/webpipes-icon.svg'
 
 const Header = ({ siteTitle }) => (
-  <div className='mw6 mw7-ns center pt4 pa3 ph5-ns'>
-    <header className='bg-white black-80 tc pv4 '>
-      <img className='brand' src={imageLogo} />
-      <h1 className='mb0 black fw6 f6'>
-        Webpipes <span className='black-40 fw1'>(v0.2)</span>
-      </h1>
-      <h2 className='black-60 lh-copy mt0'>
-        Building a programmable web for everyone.
-      </h2>
-      {/*      <nav className='bt bb tc mw7 center mt4'>
+  <header className="bg-white black-80 tc pv4">
+    <img className="brand" src={imageLogo} />
+    <h1 className="mb0 black lh-title fw7 pa0 f1">WebPipes</h1>
+    <h2 className="black-60 lh-copy mb0 mt0 f2">
+      Building a programmable web for everyone.
+    </h2>
+    {/*      <nav className='bt bb tc mw7 center mt4'>
         <ul className='ml0 pl0 f5'>
           <li className='dib'>
             <Link to='/'>Home</Link>
@@ -77,8 +74,7 @@ const Header = ({ siteTitle }) => (
       </nav>
       }
     ' */}
-    </header>
-  </div>
+  </header>
 )
 
 Header.propTypes = {

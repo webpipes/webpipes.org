@@ -206,19 +206,6 @@ const FaqPage = () => (
       </li>
     </ul>
 
-    <hr />
-    <h2>Specification Authors</h2>
-    <ul>
-      <li>
-        <a href='http://www.progrium.com/'>Jeff Lindsay</a>
-      </li>
-      <li>
-        <a href='https://hudson.dev/'>Matthew Hudson</a>
-      </li>
-      <li>
-        <a href='http://tlrobinson.net/'>Tom Robinson</a>
-      </li>
-    </ul>
   </Layout>
 )
 
