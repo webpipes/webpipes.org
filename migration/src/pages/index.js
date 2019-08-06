@@ -13,17 +13,15 @@ const IndexPage = () => (
       Unix programs; small utilities available over HTTP that do one thing, and
       do it well. Fittingly, Webpipes follow the Unix philosophy:
     </p>
-    <ul>
-      <li>Write programs that do one thing and do it well.</li>
-      <li>Write programs to work together.</li>
-      <li>
-        Write programs to handle text streams, because that is a universal
-        interface.
-      </li>
-    </ul>
     <p>
-      The magic comes when you start chaining pipes together. You can create
-      really amazing workflows by combining a few small pieces together.
+      The <strong>Parse URL</strong> webpipe is a great example and introduction
+      to to the ecosystem. There's live example & source code available `
+      <a href='https://github.com/webpipes/block-demos'>parse-url.webpip.es</a>
+      `). That same repo also contains a few other handy webpipe examples for
+      you to follow along with and use however you see fit. Other examples
+      include: e`convert-markdown-to-html`,
+      `inspect-hostname-dns`,`calculate-square-root`, `pkg-news-api`
+      `scrape-url-html`, `parse-rss`, `upload-url-to-s3`.
     </p>
     <hr />
     <h2>But... why?</h2>
@@ -49,7 +47,7 @@ const IndexPage = () => (
         maxwidth: '510px',
         width: '100%'
       }}
-      sandbox="allow-scripts allow-same-origin"
+      sandbox='allow-scripts allow-same-origin'
     />
 
     <p>
@@ -71,20 +69,20 @@ const IndexPage = () => (
     </p>
     <p>
       Precise requirements are covered in the{' '}
-      <a href="https://github.com/webpipes/spec">specification</a> .
+      <a href='https://github.com/webpipes/spec'>specification</a> .
     </p>
 
     <hr />
     <h2>Specification Authors</h2>
     <ul>
       <li>
-        <a href="http://www.progrium.com/">Jeff Lindsay</a>
+        <a href='http://www.progrium.com/'>Jeff Lindsay</a>
       </li>
       <li>
-        <a href="https://hudson.dev/">Matthew Hudson</a>
+        <a href='https://hudson.dev/'>Matthew Hudson</a>
       </li>
       <li>
-        <a href="http://tlrobinson.net/">Tom Robinson</a>
+        <a href='http://tlrobinson.net/'>Tom Robinson</a>
       </li>
     </ul>
   </Layout>

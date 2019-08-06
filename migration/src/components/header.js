@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import imageLogo from '../images/webpipes-icon.svg'
+import imageLogo from '../images/webpipe-spec-full-logo.svg'
 
 const Header = ({ siteTitle }) => (
-  <header className="bg-white black-80 tc pv4">
-    <img className="brand" src={imageLogo} />
-    <h1 className="mb0 black lh-title fw7 pa0 f1">WebPipes</h1>
-    <h2 className="black-60 lh-copy mb0 mt0 f2">
+  <header className='bg-white black-80 tc pv4'>
+    <img className='brand' src={imageLogo} />
+    <h1 className='mb0 black lh-title fw7 mt2 pa0 f1'>WebPipes</h1>
+    <h2 className='black-60 lh-copy mb0 mt0 f2'>
       Building a programmable web for everyone.
     </h2>
     {/*      <nav className='bt bb tc mw7 center mt4'>
