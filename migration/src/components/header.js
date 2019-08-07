@@ -70,6 +70,9 @@ const Header = ({ siteTitle }) => (
               Google Group
             </a>
           </li>
+          <li className='dib'>
+            <a href='https://spectrum.chat/webpipes?tab=posts'>Spectrum</a>
+          </li>
         </ul>
       </nav>
       }

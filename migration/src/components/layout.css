@@ -52,31 +52,6 @@ main h2 {
   margin-left: auto;
 }
 
-a,
-a:visited,
-a:active,
-a:hover {
-  color: var(--code-blue);
-  text-decoration: none;
-  transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline;
-  line-height: 1em;
-  border-bottom: solid 1px var(--code-purple);
-  transition: 0.2s ease;
-}
-
-a:hover {
-  color: var(--code-purple);
-  border-bottom: solid 1px var(--code-blue);
-}
-
-a.db,
-a.db:visited,
-a.db:active,
-a.db:hover {
-  display: block;
-}
-
 aside li {
   list-style-type: none;
 }

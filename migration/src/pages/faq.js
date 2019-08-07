@@ -7,6 +7,17 @@ import CarbonEmbed from '../components/carbon-embed'
 const FaqPage = () => (
   <Layout>
     <SEO title={'FAQ'} />
+    <h2>How do they work?</h2>
+    <p>
+      Since a WebPipe is language endpoint and essentially just a script that
+      receives input via HTTP POST, there's not much else to know other than how
+      to structure the output.
+    </p>
+    <p>
+      The core behavioral requirements are handled by client and server
+      libraries. Precise requirements are covered in the{' '}
+      <a href='https://github.com/webpipes/spec'>specification</a> .
+    </p>
     <p>
       Webpipes are a work-in-progress proposal for linking together web
       services. Essentially, you can think of Webpipes as UNIX programs.
@@ -205,7 +216,6 @@ const FaqPage = () => (
         <br /> Debug your HTTP requests. Auto-generates a cURL command.
       </li>
     </ul>
-
   </Layout>
 )
 
